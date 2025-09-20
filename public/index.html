@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выставка недвижимости OAZ</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+    <body>
+        <header>
+            <h1>ВЫСТАВКА НЕДВИЖИМОСТИ ОАЭ</br>
+            В ЦЕНТРЕ САНКТ-ПЕТЕРБУРГА</h1>
+            <h2>ЗАСТРОЙЩИК ALDAR<br>
+            ВПЕРВЫЕ В ПЕТЕРБУРГЕ</h2>
+        </header>
+
+        <main>
+            <section>
+            
+                <p>Закрытая презентация эксклюзивных проектов<br> 
+                Aldar Properties в Дубее и Абу-Даби.<br>
+                Только для ограниченного круга гостей.</p>
+                
+                <p><strong>Дата: 11 октября 2025</strong><br>
+                <strong>Время: 16:00 – 20:00</strong><br>
+                <strong>Место: Four Seasons Hotel,<br>
+                Cанкт-Петербург</strong></p>
+            </section>
+
+            <section>
+                <h3>Aldar Properties —</h3>
+            </section>
+
+            <section>
+                <h3>RichRoots —</h3>
+            </section>
+
+            <section>
+                <h3>Что вас ждёт на<br><strong>ROADSHOW</strong></h3>
+                
+                <table>
+                    <tr>
+                        <td>Выступление основания Rich roots</td>
+                            Михаила Семёнова реальные
+                            кейсы, стратегии, цифры</td>
+                    </tr>
+                    <tr>
+                        <td>Презентация от Aldar: новые</td>
+                            проекты и кварталы будущего</td>
+                    </tr>
+                    <tr>
+                        <td>Фуршет, нетворкинг с</td>
+                            инвесторами и экспертами</td>
+                    </tr>
+                    <tr>
+                        <td>Эксклюзивные предложения,</td>
+                            доступные только на Roadshow</td>
+                    </tr>
+                    <tr>
+                        <td>Возможность сразу</td>
+                            зафиксировать бронирование</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h3>Почему стоит прийти</h3>
+                
+                <p>Инвестиции в недвижимость ОАЭ = стабильный доход в валюте</p>
+                <p>Гибкие условия финансирования и самые приятные условия при бронировании на мероприятии</p>
+                <p>Объекты, которые уже сегодня формируют новый уровень жизни в Дубае и Абу-Даби</p>
+                <p>Потенциал роста капитализации от 10% в валюте в год</p>
+            </section>
+
+            <section>
+                <h3>До встречи!</h3>           
+                <p><strong>11.10.2025 в 16:00, Four Seasons Hotel</strong><br>
+                <strong>Количество мест строго ограничено</strong></p>
+            </section>
+
+            <section>
+                
+                <form class="reg" id="clientForm">
+                    <h2>Зарегистрироваться</h2>
+                    <input type="text" id="fullname" name="full_name" required placeholder="ФИО">
+                    <input type="tel" id="phone" name="phone" required placeholder="Номер телефона">
+                    <input type="email" id="email" name="email" required placeholder="Почта">
+                    <button type="submit" id="clientSubmitBtn">Зарегистрироваться</button>
+                </form>
+                
+                <form class="reg" id="brokerForm">
+                    <h3>Зарегистрировать клиента</h3>
+                    <input type="text" id="brokerName" name="broker_name" required placeholder="ФИО">
+                    <input type="tel" id="brokerPhone" name="broker_phone" required placeholder="Номер телефона брокера">
+                    <input type="text" id="clientName" name="client_name" required placeholder="Имя клиента">
+                    <button type="submit" id="brokerSubmitBtn">Зарегистрироваться</button>
+                </form>
+            </section>
+
+             <div class="qr-section" id="clientQrSection">
+                <h2>QR-код для входа на выставку</h2>
+                <div class="qr-container">
+                    <div id="clientQrcode"></div>
+                </div>
+                <a
+                href="#"
+                id="clientDownloadLink"
+                class="download-btn"
+                style="display: none"
+                >Скачать QR-код
+                </a>
+                <p class="success-message">
+                Регистрация успешно завершена! Сохраните этот QR-код для входа на
+                мероприятие.
+                </p>
+            </div>
+
+            <div class="qr-section" id="brokerQrSection">
+                <h2>QR-код для входа клиента от брокера</h2>
+                <div class="qr-container">
+                <div id="brokerQrcode"></div>
+                </div>
+                <a
+                href="#"
+                id="brokerDownloadLink"
+                class="download-btn"
+                style="display: none"
+                >Скачать QR-код
+                </a>
+                <p class="success-message">
+                Регистрация успешно завершена! Сохраните этот QR-код для входа на
+                мероприятие.
+                </p>
+            </div>
+
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
